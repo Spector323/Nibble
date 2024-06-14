@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="./src/style/main2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/image/vhod/Icon.svg" type="image/x-icon">
+    <title>Nibble</title>
+    <script src="./src/script/vhod.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="main_container_img">
+            <img src="./src/image/vhod/Icon.svg" alt="">
+            <h1 class="span" style="margin-left: 16px;">Nibble</h1>
+        </div>
+        <div class="main_container">
+            <div class="container">
+                <div class="text_acc">
+                    <p style="font-family: Open Sans; font-size: 32px; font-weight: 700; text-align: left;">Welcome!</p>
+                    <p style="font-family: Open Sans; font-size: 20px; font-weight: 400; line-height: 32px; text-align: left; color:#626264">Sign in to your account to continue</p>
+                </div>
+                <div class="block_acc_main">
+                    <div class="acc_main">
+                        <img src="./src/image/vhod/acc-2.svg" alt="">
+                        <div class="acc_icon_block">
+                            <p style="font-family: Open Sans; font-size: 14px; font-weight: 800; line-height: 24px; letter-spacing: 2px; text-align: left;">EMAIL ADDRESS</p>
+                            <input type="text" id="email" class="acc_icon_text" placeholder="mamilov_ashab999@gmail.com" maxlength="36">
+                        </div>
+                    </div>
+                    <div class="acc_main">
+                        <img src="./src/image/vhod/acc-3.svg" alt="">
+                        <div class="acc_icon_block">
+                            <p style="font-family: Open Sans; font-size: 14px; font-weight: 800; line-height: 24px; letter-spacing: 2px; text-align: left;">PASSWORD</p>
+                            <input type="password" id="password" class="acc_icon_text" placeholder="******" maxlength="16">
+                        </div>
+                    </div>
+                </div>
+                <div id="errorMessage" style="display: none; color: red; font-family: Open Sans; font-size: 16px; font-weight: 700; text-align: center; margin-top: 10px;"></div>
+                <div id="successMessage" style="display: none; color: green; font-family: Open Sans; font-size: 20px; font-weight: 700; text-align: center; margin-top: 10px;">Вход выполнен успешно!</div>
+                <div class="block_btn_acc">
+                    <form onsubmit="return validateForm()">
+                        <button class="btn_acc_1">Sign in</button>
+                    </form>
+                    <div class="btn_text_acc">
+                        <a href="./forgot_password.html">Forgot password?</a>
+                    </div>
+                    <form action="./new_vhod.html">
+                        <button class="btn_acc_2">Create an account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
